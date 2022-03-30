@@ -1,108 +1,34 @@
 package gsqa.gheart.tests.java.test;
 
-import java.util.concurrent.TimeUnit;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
-import org.junit.jupiter.api.AfterEach;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import com.google.common.base.Stopwatch;
-
 import gsqa.gheart.sdk.java.helpers.GreenHeartHelper;
-import gsqa.gheart.sdk.java.models.DevEnvironment;
-import gsqa.gheart.sdk.java.models.GsqaService;
 
+@ExtendWith(SuiteFalabellaExtension.class)
 @TestMethodOrder(MethodOrderer.Alphanumeric.class)
-public class SuiteFalabella {
-
-	private static WebDriver driver;
-	private static Boolean testResult;
-	private static Stopwatch time = Stopwatch.createUnstarted();
-
-	@BeforeAll
-	public static void testInitialize() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Green SQA\\AiMaps\\chromedriver_win32\\chromedriver.exe");
-		driver = new ChromeDriver();
-		GreenHeartHelper.init(false, "123456", "GSQA", "123456", "GreenHeart", "001", "Suite_Falabella", "1.0");
-	}
-
-	@AfterAll
-	public static void killDriver() {
-		driver.close();
-	}
-
-	@BeforeEach
-	public void start() {
-		time.start();
-	}
-
-	@AfterEach
-	public void publishToGreenHeart(TestInfo testInfo) {
-		String testName = testInfo.getDisplayName();
-		switch (testName) {
-		case ("VALIDAR_DISPONIBILIDAD_FALABELLA"): {
-			GreenHeartHelper.publish(testResult, testName, "cgordillo", 3000, 12000,
-					time.elapsed(TimeUnit.MILLISECONDS), 2.5, DevEnvironment.DEV, GsqaService.TIA, "GreenHeart");
-			break;
-		}
-		case ("BUSQUEDA_FALABELLA"): {
-			GreenHeartHelper.publish(testResult, testName, "cgordillo", 2000, 8000, time.elapsed(TimeUnit.MILLISECONDS),
-					2.0, DevEnvironment.DEV, GsqaService.TIA, "GreenHeart");
-			break;
-		}
-		}
-		time.reset();
-	}
+public class SuiteFalabella extends SuiteFalabellaExtension {
 
 	@DisplayName("VALIDAR_DISPONIBILIDAD_FALABELLA")
 	@Test
 	public void A_validarDisponibilidadFalabella() {
-		testResult = navigate();
-		assertTrue(testResult, "Test fail!");
+		driver.navigate().to("https://www.falabella.com/");
+		driver.manage().window().maximize();
+		GreenHeartHelper.takeEvidenceWithScreenshot("Navegación", "Se navega al sitio web corretamente", driver);
 	}
 
 	@DisplayName("BUSQUEDA_FALABELLA")
 	@Test
-	public void B_busquedaFalabella() {
-		testResult = search("Laptop table");
-		assertTrue(testResult, "Test fail!");
-	}
-
-	private static Boolean navigate() {
-		try {
-			driver.navigate().to("https://www.falabella.com/");
-			driver.manage().window().maximize();
-			GreenHeartHelper.takeEvidenceWithScreenshot("Navegación", "Se navega al sitio web corretamente", driver);
-			return true;
-		} catch (Exception ex) {
-			GreenHeartHelper.takeEvidenceWithScreenshot("Error", "No se pudo navegar al sitio web " + ex, driver);
-			return false;
-		}
-	}
-
-	private static Boolean search(String text) {
-		try {
-			driver.findElement(By.id("testId-SearchBar-Input")).click();
-			driver.findElement(By.id("testId-SearchBar-Input")).sendKeys(text);
-			driver.findElement(By.cssSelector("#testId-search-wrapper > div > button")).click();
-			Thread.sleep(1000);
-			GreenHeartHelper.takeEvidenceWithScreenshot("Búsqueda",
-					"Se realiza la búsqueda de " + text + " correctamente", driver);
-			return true;
-		} catch (Exception ex) {
-			GreenHeartHelper.takeEvidenceWithScreenshot("Error", "No se pudo realizar la búsqueda correctamente " + ex,
-					driver);
-			return false;
-		}
+	public void B_busquedaFalabella() throws Exception {
+		String text = "Laptop table";
+		driver.findElement(By.id("testId-SearchBar-Input")).click();
+		driver.findElement(By.id("testId-SearchBar-Input")).sendKeys(text);
+		driver.findElement(By.cssSelector("#testId-search-wrapper > div > button")).click();
+		Thread.sleep(1000);
+		GreenHeartHelper.takeEvidenceWithScreenshot("Búsqueda", "Se realiza la búsqueda de " + text + " correctamente",
+				driver);
 	}
 }

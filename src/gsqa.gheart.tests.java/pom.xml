@@ -38,7 +38,7 @@
 			</snapshots>
 		</repository>
 	</distributionManagement>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -78,7 +78,7 @@
 		<dependency>
 			<groupId>gsqa.gheart.sdk</groupId>
 			<artifactId>java</artifactId>
-			<version>1.0.20220328.1-RC</version>
+			<version>1.0.20220330.5-RC</version>
 		</dependency>
 	</dependencies>
 
