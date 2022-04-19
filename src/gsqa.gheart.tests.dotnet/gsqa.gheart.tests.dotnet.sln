@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gsqa.gheart.tests.dotnet.fx", "gsqa.gheart.tests.dotnet.fx\gsqa.gheart.tests.dotnet.fx.csproj", "{FFE53990-D318-415C-9DD4-1CB9E807B2EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE53990-D318-415C-9DD4-1CB9E807B2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE53990-D318-415C-9DD4-1CB9E807B2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE53990-D318-415C-9DD4-1CB9E807B2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE53990-D318-415C-9DD4-1CB9E807B2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C850CD4-4786-47B5-8307-BAA8FC751AA8}
+	EndGlobalSection
+EndGlobal
