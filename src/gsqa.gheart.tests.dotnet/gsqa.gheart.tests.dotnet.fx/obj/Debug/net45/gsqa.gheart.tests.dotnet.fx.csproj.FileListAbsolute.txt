@@ -17,11 +17,10 @@ C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dot
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\bin\Debug\net45\System.ValueTuple.dll
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\bin\Debug\net45\Microsoft.WindowsAzure.Storage.dll
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.dll.config
+C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.AssemblyInfoInputs.cache
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.AssemblyInfo.cs
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.csproj.CoreCompileInputs.cache
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.csproj.CopyComplete
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.dll
 C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.pdb
-C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.csproj.AssemblyReference.cache
-C:\Users\Green SQA\source\repos\greensqa\GreenSQADemos\src\gsqa.gheart.tests.dotnet\gsqa.gheart.tests.dotnet.fx\obj\Debug\net45\gsqa.gheart.tests.dotnet.fx.GeneratedMSBuildEditorConfig.editorconfig
