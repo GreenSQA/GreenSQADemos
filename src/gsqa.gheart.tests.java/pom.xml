@@ -78,7 +78,7 @@
 		<dependency>
 			<groupId>gsqa.gheart.sdk</groupId>
 			<artifactId>java</artifactId>
-			<version>1.0.20220615.1-RC</version>
+			<version>1.0.20220726.1-RC</version>
 		</dependency>
 	</dependencies>
 
